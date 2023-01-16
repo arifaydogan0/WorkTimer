@@ -1,3 +1,4 @@
+using System.Diagnostics.Tracing;
 using WorkTimer.Forms;
 
 namespace WorkTimer
@@ -10,10 +11,15 @@ namespace WorkTimer
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormMiniScreen());
+            bool AcikUygulamaVar = false;
+            Mutex m = new Mutex(true, "WorkTimer", out AcikUygulamaVar);
+            if (AcikUygulamaVar)
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new FormMiniScreen());
+            }
         }
     }
 }
