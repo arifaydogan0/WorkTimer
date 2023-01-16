@@ -38,7 +38,7 @@ namespace WorkTimer.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             job.Name = textBox1.Text;
-            job.TotalTime = TimeSpan.Parse($"{comboBox1.Text}:{comboBox2.Text}:{comboBox3.Text}");
+            job.TotalTime = !(comboBox1.Text == comboBox2.Text && comboBox1.Text == comboBox3.Text && comboBox3.Text == "00") ? TimeSpan.Parse($"{comboBox1.Text}:{comboBox2.Text}:{comboBox3.Text}") : TimeSpan.Parse($"{comboBox1.Text}:{comboBox2.Text}:05");
             job.RemainingTime = job.TotalTime;
 
             List<string> satirlar = new List<string>();
