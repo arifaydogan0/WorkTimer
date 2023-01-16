@@ -345,5 +345,10 @@ namespace WorkTimer.Forms
         {
             Application.Exit();
         }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.BringToFront();
+        }
     }
 }

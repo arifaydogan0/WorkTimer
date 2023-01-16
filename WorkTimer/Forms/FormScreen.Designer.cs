@@ -525,6 +525,7 @@
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "WorkTimer";
             this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
             // contextMenuStrip1
             // 
@@ -532,19 +533,19 @@
             this.gösterGizleToolStripMenuItem,
             this.çıkışToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(139, 48);
             // 
             // gösterGizleToolStripMenuItem
             // 
             this.gösterGizleToolStripMenuItem.Name = "gösterGizleToolStripMenuItem";
-            this.gösterGizleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gösterGizleToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.gösterGizleToolStripMenuItem.Text = "Göster/Gizle";
             this.gösterGizleToolStripMenuItem.Click += new System.EventHandler(this.gösterGizleToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
             this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
