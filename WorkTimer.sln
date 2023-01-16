@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkTimer", "WorkTimer\WorkTimer.csproj", "{A1D8D348-6C11-4B75-993D-7FAE56D42824}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1D8D348-6C11-4B75-993D-7FAE56D42824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D8D348-6C11-4B75-993D-7FAE56D42824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D8D348-6C11-4B75-993D-7FAE56D42824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D8D348-6C11-4B75-993D-7FAE56D42824}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54C653E1-D74C-421C-887A-F6C8AFF6CCCE}
+	EndGlobalSection
+EndGlobal
