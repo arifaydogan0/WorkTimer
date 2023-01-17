@@ -6,11 +6,19 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <PackageIcon>kumsaati.ico</PackageIcon>
     <ApplicationIcon>kumsaati.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Include="kumsaati.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\AA\Projeler\Photoshop\görseller\kumsaati.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
