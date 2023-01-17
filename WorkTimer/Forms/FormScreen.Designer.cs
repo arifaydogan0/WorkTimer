@@ -559,9 +559,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormScreen";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.Text = "FormScreen";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormScreen_FormClosing);
             this.Load += new System.EventHandler(this.FormScreen_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);

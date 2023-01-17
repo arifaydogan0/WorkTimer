@@ -9,6 +9,7 @@ namespace WorkTimer.Forms
         public static List<Job> Jobs { get; set; } = Job.Jobs;
         public byte ActivePanel = 0;
         public bool IsVisible = true;
+        private bool CancelExit = true;
         public FormScreen()
         {
             InitializeComponent();
@@ -343,12 +344,18 @@ namespace WorkTimer.Forms
 
         private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            CancelExit = false;
             Application.Exit();
         }
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             this.BringToFront();
+        }
+
+        private void FormScreen_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = CancelExit;
         }
     }
 }

@@ -6,11 +6,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationIcon>mektup 2.ico</ApplicationIcon>
+    <ApplicationIcon>kumsaati.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="mektup 2.ico" />
+    <Content Include="kumsaati.ico" />
   </ItemGroup>
 
   <ItemGroup>
