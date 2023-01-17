@@ -559,7 +559,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormScreen";
-            this.Text = "FormScreen";
+            this.Text = "WorkTimer";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormScreen_FormClosing);
             this.Load += new System.EventHandler(this.FormScreen_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

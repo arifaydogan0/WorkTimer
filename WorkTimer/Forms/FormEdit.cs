@@ -45,7 +45,7 @@ namespace WorkTimer.Forms
             using (StreamReader sr = new(Paths.Paths.ConfigFilePath))
             {
                 while (!sr.EndOfStream)
-                    satirlar.Add(sr.ReadLine());
+                    satirlar.Add(sr.ReadLine() ?? "");
             }
             File.Delete(Paths.Paths.ConfigFilePath);
             satirlar[line] = $"{job.Name}>>>{job.TotalTime}>>>{job.RemainingTime}";
